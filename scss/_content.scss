@@ -21,3 +21,23 @@
     font-weight: 300;
   }
 }
+
+@media(min-width:$desktop-tablet-width) {
+  .content {
+    position: relative;
+    padding: 38px 21px;
+    &__title {
+      font-size: 22px;
+      line-height: 26px;
+    }
+    &__expl {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__question {
+      margin: 100px 0 0 0;
+      font-size: 13px;
+      line-height: 15px;
+    }
+  }
+}

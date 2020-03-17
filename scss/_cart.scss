@@ -1,7 +1,6 @@
 .cart {
   width: 320px;
   margin: 30px auto;
-
   background-color: #fff;
   .title__wrap {
     background-color: $blue-color;
@@ -15,16 +14,19 @@
       font-family: 'PTSans', Arial, sans-serif;
       font-size: 30px;
       line-height: 40px;
-      text-align: justify;
       color: #fff;
     }
   } 
+  #shape {
+    display: none;
+  }
 }
 
 @media(min-width:$desktop-tablet-width) {
   .cart {
     display: flex;
     width: 665px;
+    min-height: 480px;
     .title__wrap {
       position: relative;
       display: flex;
@@ -43,6 +45,13 @@
         left: 10px;
         bottom: 70px;
       }
+    }
+    #shape {
+      display: block;
+      position: absolute;
+      right: 67px;
+      bottom: 60px;
+      z-index: 2;
     }
   }
 }

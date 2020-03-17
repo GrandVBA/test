@@ -106,8 +106,11 @@ img {
   font-family: 'PTSans', Arial, sans-serif;
   font-size: 30px;
   line-height: 40px;
-  text-align: justify;
   color: #fff;
+}
+
+.cart #shape {
+  display: none;
 }
 
 @media (min-width: 800px) {
@@ -116,6 +119,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     width: 665px;
+    min-height: 480px;
   }
   .cart .title__wrap {
     position: relative;
@@ -139,6 +143,13 @@ img {
             transform: rotate(-90deg);
     left: 10px;
     bottom: 70px;
+  }
+  .cart #shape {
+    display: block;
+    position: absolute;
+    right: 67px;
+    bottom: 60px;
+    z-index: 2;
   }
 }
 
@@ -167,6 +178,26 @@ img {
   font-weight: 300;
 }
 
+@media (min-width: 800px) {
+  .content {
+    position: relative;
+    padding: 38px 21px;
+  }
+  .content__title {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .content__expl {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .content__question {
+    margin: 100px 0 0 0;
+    font-size: 13px;
+    line-height: 15px;
+  }
+}
+
 .form {
   margin: 20px 0 0 0;
 }
@@ -189,10 +220,12 @@ img {
 }
 
 .form__item input, .form__item select {
-  padding: 3px 0;
+  padding: 5px 0;
   border: none;
   border-bottom: 1px solid #f2f2f2;
   outline: none;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .form__item input:hover, .form__item input:focus, .form__item select:hover, .form__item select:focus {
@@ -203,24 +236,28 @@ img {
   font-size: 12px;
   line-height: 14px;
   color: #c7c7c7;
+  z-index: 3;
 }
 
 .form__item input:-ms-input-placeholder {
   font-size: 12px;
   line-height: 14px;
   color: #c7c7c7;
+  z-index: 3;
 }
 
 .form__item input::-ms-input-placeholder {
   font-size: 12px;
   line-height: 14px;
   color: #c7c7c7;
+  z-index: 3;
 }
 
 .form__item input::placeholder {
   font-size: 12px;
   line-height: 14px;
   color: #c7c7c7;
+  z-index: 3;
 }
 
 .form__item label {
@@ -228,6 +265,7 @@ img {
   line-height: 12px;
   font-weight: 300px;
   color: #7C7C7C;
+  z-index: 3;
 }
 
 .form__item select {
@@ -236,6 +274,7 @@ img {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
+  z-index: 3;
 }
 
 .form__item .form__nation {
@@ -318,5 +357,86 @@ img {
   border: none;
   background: #5A61ED;
   color: #fff;
+}
+
+@media (min-width: 800px) {
+  .form {
+    margin: 5px 0 0 0;
+  }
+  .form__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 485px;
+  }
+  .form__item {
+    margin: 17px 0 0 0;
+    width: 234px;
+  }
+  .form label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .form select {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .form .date-wrapper .form__day {
+    width: 56px;
+  }
+  .form .date-wrapper .form__month {
+    width: 91px;
+  }
+  .form .date-wrapper .form__year {
+    width: 68px;
+  }
+  .form .gender__wrap {
+    padding: 3px 0;
+  }
+  .form .gender__wrap label {
+    padding: 0 0 0 18px;
+    margin: 0 13px 0 0;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .form .gender__wrap label::before {
+    width: 12px;
+    height: 12px;
+    top: 2px;
+    left: 1px;
+    border: 0.7px solid #5A61ED;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 6.3px;
+  }
+  .form .gender__wrap label input[type="radio"] {
+    display: none;
+  }
+  .form .gender__wrap label input[type="radio"]:checked + .gender__indicator::before {
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    left: 4px;
+  }
+  .form__btn {
+    position: absolute;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    width: 154px;
+    height: 32px;
+    bottom: 33px;
+    right: 21px;
+    z-index: 3;
+  }
 }
 /*# sourceMappingURL=style.css.map */

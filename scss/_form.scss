@@ -10,10 +10,12 @@
     flex-direction: column;
     margin: 15px 0 0 0;
     input, select {
-      padding: 3px 0;
+      padding: 5px 0;
       border: none;
       border-bottom: 1px solid #f2f2f2;
       outline: none;
+      z-index: 3;
+      background-color: rgba(255,255,255,0);
       &:hover,
       &:focus {
         border-bottom: 1px solid #000;
@@ -23,6 +25,7 @@
       font-size: 12px;
       line-height: 14px;
       color: #c7c7c7;
+      z-index: 3;
     }
 
     label {
@@ -30,12 +33,14 @@
       line-height: 12px;
       font-weight: 300px;
       color: #7C7C7C;
+      z-index: 3;
     }
 
     select {
       font-size: 12px;
       line-height: 14px;
       appearance: none;
+      z-index: 3;
     }
 
     .form__nation {
@@ -116,5 +121,83 @@
     border: none;
     background:  $blue-color;
     color: #fff;
+  }
+}
+
+@media(min-width:$desktop-tablet-width) {
+  .form {
+    margin: 5px 0 0 0;
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 485px;
+    }
+    &__item {
+      margin: 17px 0 0 0;
+      width: 234px;
+    }
+    label {
+      font-size: 12px;
+      line-height: 14px;
+    }
+    select {
+      font-size: 14px;
+      line-height: 16px;
+    }
+    .date-wrapper {
+      .form__day {
+        width: 56px;
+      }
+      .form__month {
+        width: 91px;
+      }
+      .form__year {
+        width: 68px;
+      }
+    }
+    .gender__wrap {
+      padding: 3px 0;
+      label {
+        padding: 0 0 0 18px;
+        margin: 0 13px 0 0;
+        font-size: 14px;
+        line-height: 16px;
+        &::before {
+          width: 12px;
+          height: 12px;
+
+          top: 2px;
+          left: 1px;
+
+          border: 0.7px solid $blue-color;
+          box-sizing: border-box;
+          border-radius: 6.3px;
+        }
+        input[type="radio"] {
+          display: none;
+          &:checked + .gender__indicator::before {
+            width: 6px;
+            height: 6px;
+            top: 5px;
+            left: 4px;
+          }
+        }
+      }
+    } 
+    &__btn {
+      position: absolute;
+      margin: 0;
+      font-size: 14px;
+      line-height: 18px;
+  
+      width: 154px;
+      height: 32px;
+
+      bottom: 33px;
+      right: 21px;
+      z-index: 3;
+    }
   }
 }
