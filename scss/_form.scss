@@ -1,0 +1,29 @@
+.form {
+  &__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    input, select {
+      border: none;
+      border-bottom: 1px solid #f2f2f2;
+      outline: none;
+      &:hover,
+      &:focus {
+        border-bottom: 1px solid #000;
+      }
+    }
+    input::placeholder {
+      color: #c7c7c7;
+    }
+    label {
+      font-size: 10px;
+      line-height: 12px;
+      font-weight: 300px;
+      color: #7C7C7C;
+    }
+  }
+}

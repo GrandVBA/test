@@ -101,7 +101,7 @@ img {
 }
 
 .content {
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .content__title {
@@ -122,5 +122,54 @@ img {
   font-size: 11px;
   line-height: 13px;
   font-weight: 300;
+}
+
+.form__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.form__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__item input, .form__item select {
+  border: none;
+  border-bottom: 1px solid #f2f2f2;
+  outline: none;
+}
+
+.form__item input:hover, .form__item input:focus, .form__item select:hover, .form__item select:focus {
+  border-bottom: 1px solid #000;
+}
+
+.form__item input::-webkit-input-placeholder {
+  color: #c7c7c7;
+}
+
+.form__item input:-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+.form__item input::-ms-input-placeholder {
+  color: #c7c7c7;
+}
+
+.form__item input::placeholder {
+  color: #c7c7c7;
+}
+
+.form__item label {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 300px;
+  color: #7C7C7C;
 }
 /*# sourceMappingURL=style.css.map */
