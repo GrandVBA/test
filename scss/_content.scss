@@ -1,0 +1,22 @@
+.content {
+  padding: 20px 10px;
+  &__title {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+  }
+  &__expl {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+  }
+  &__question {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 300;
+  }
+}

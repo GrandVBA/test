@@ -27,9 +27,16 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-family: 'WorkSans', sans-serif;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 400;
+
+  color: #000;
 }
 
 .visually-hidden {
