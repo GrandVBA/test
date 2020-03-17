@@ -1,14 +1,19 @@
 .modal {
-  //position: fixed;
-  //top: 10%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  //min-height: 700px;
   width: 380px;
-
   background: #F2F2F2;
+}
+
+@media(min-width:$desktop-tablet-width) {
+  .modal {
+    position: absolute;
+    top: 5%;
+
+    min-height: 600px;
+    width: 800px;
+  }
 }
