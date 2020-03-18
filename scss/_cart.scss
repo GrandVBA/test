@@ -1,7 +1,9 @@
 .cart {
+  position: relative;
   width: 320px;
   margin: 30px auto;
   background-color: #fff;
+  overflow: hidden;
   .title__wrap {
     background-color: $blue-color;
     .cart__title {
@@ -19,6 +21,15 @@
   } 
   #shape {
     display: none;
+  }
+}
+
+@keyframes show-logo {
+  0%{
+    transform: translate(400px, 310px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
 
@@ -49,9 +60,11 @@
     #shape {
       display: block;
       position: absolute;
-      right: 67px;
-      bottom: 60px;
+      right: 0;
+      bottom: 0;
       z-index: 2;
+      animation: show-logo 23s;
+      animation-delay: 0;
     }
   }
 }

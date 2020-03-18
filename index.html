@@ -20,17 +20,17 @@
           <p class="content__expl">
             Use the form below to create your account.
           </p>
-          <form class="content__form form" action="#">
+          <form class="content__form form" method="post" action="#">
             <ul class="form__list">
-              <li class="form__item">
+              <li class="form__item form__item--show1">
                 <label for="f-name">First Name</label>
-                <input class="form__fname" id="f-name" type="text" placeholder="Alice">
+                <input class="form__fname" id="f-name" name="first-name" type="text" placeholder="Alice">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show2">
                 <label for="l-name">Last Name</label>
-                <input class="form__lname" id="l-name" type="text" placeholder="Miller">
+                <input class="form__lname" id="l-name" name="last-name" type="text" placeholder="Miller">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show3">
                 <label for="nationality">Nationality</label>
                 <select class="form__nation" name="Nation" id="nationality">
                   <option value="American">American</option>
@@ -38,11 +38,11 @@
                   <option value="Italy">Italy</option>
                 </select>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show4">
                 <label for="mail">E-mail</label>
                 <input class="form__email" id="mail" type="email" placeholder="alice.miller@yahoo.com">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show5">
                 <label>Date of Birth</label>
                 <div class="date-wrapper">
                   <div class="day-wrap">
@@ -100,23 +100,23 @@
                   </select>
                 </div>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show6">
                 <label>Gender</label>
                 <div class="gender__wrap">
                   <label class="gender__male" for="male"><input class="form__gender" id="male" type="radio" name="gender" value="Male" checked><span class="gender__indicator"></span>Male</label>
                   <label class="gender__female" for="female"><input class="form__gender" id="female" type="radio" name="gender" value="Female"><span class="gender__indicator"></span>Female</label>
                 </div>
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show7">
                 <label for="pass">Password</label>
                 <input class="form__pass" id="pass" type="password">
               </li>
-              <li class="form__item">
+              <li class="form__item form__item--show8">
                 <label for="conf-pass">Confim Password</label>
                 <input class="form__cpass" id="conf-pass" type="password">
               </li>
             </ul>
-            <input class="form__btn" type="submit" value="Complete Signup">
+            <input class="form__btn" id="btn" type="submit" value="Complete Signup">
           </form>
           <p class="content__question">Have an account? <a class="content__link" href="#">Login</a></p>
         </div>
@@ -125,7 +125,7 @@
         </svg>
       </div>
     </section>
-    <!--<script src="js/vendor/lazy-line-painter-1.9.6.min.js"></script>-->
+    <script src="js/vendor/lazy-line-painter-1.9.6.min.js"></script>
     <script type="text/javascript">
 
       (function(){ 
@@ -133,14 +133,8 @@
         document.onreadystatechange = () => {
 
           if (document.readyState === 'complete') {
-                    
-            /**
-             * Setup your Lazy Line element.
-             * see README file for more settings
-             */
-
             let el = document.querySelector('#shape');
-            let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":2.1,"strokeOpacity":0.2,"strokeColor":"#5A61ED","strokeCap":"square","delay":360}); 
+            let myAnimation = new LazyLinePainter(el, {"ease":"easeLinear","strokeWidth":1.7,"strokeOpacity":0.2,"strokeColor":"#5A61ED","strokeCap":"square","delay":10000}); 
             myAnimation.paint(); 
           }
         }
