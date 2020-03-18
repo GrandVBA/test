@@ -108,9 +108,20 @@
           }
         }
       }
+      .gender__male {
+        width: 50px;
+      }
+
+      .gender__female {
+        width: 70px;
+      }
+      .gender__male, .gender__female {
+        display: inline-block;
+        vertical-align: bottom;
+      }
     }
     &--show1 {
-      animation: show1 0.4s;
+      animation: show2 0.4s;
     }
     &--show2 {
       animation: show2 1.2s;
@@ -134,6 +145,7 @@
       animation: show4 6s;
     }
   }
+  
   &__btn {
     display: block;
     margin: 15px 0 0 auto;

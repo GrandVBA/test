@@ -11,7 +11,7 @@
   0% {
     transform: scaleY(0) translateY(30px);
   }
-  80% {
+  90% {
     transform: scaleY(0) translateY(30px);
   }
   100% {
@@ -23,7 +23,7 @@
   0% {
     transform: scaleY(0) translateY(30px);
   }
-  90% {
+  95% {
     transform: scaleY(0) translateY(30px);
   }
   100% {
@@ -40,5 +40,14 @@
   }
   100% {
     transform: scaleY(1) translateY(0);
+  }
+}
+
+@keyframes show-logo {
+  0%{
+    transform: translate(400px, 310px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }

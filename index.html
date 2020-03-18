@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Тестовое задание</title>
   </head>
   <body>
@@ -20,7 +20,7 @@
           <p class="content__expl">
             Use the form below to create your account.
           </p>
-          <form class="content__form form" method="post" action="#">
+          <form class="content__form form" action="#" method="POST">
             <ul class="form__list">
               <li class="form__item form__item--show1">
                 <label for="f-name">First Name</label>
@@ -125,9 +125,13 @@
         </svg>
       </div>
     </section>
-    <script src="js/vendor/lazy-line-painter-1.9.6.min.js"></script>
+    
     <script type="text/javascript">
 
+      if (screen.width > 799) document.write ('<script src="js/vendor/lazy-line-painter-1.9.6.min.js"></sc' + 'ript>');
+  
+    </script>
+    <script type="text/javascript">
       (function(){ 
 
         document.onreadystatechange = () => {
@@ -140,7 +144,6 @@
         }
 
       })();
-
     </script>
   </body>
 </html>

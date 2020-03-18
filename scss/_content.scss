@@ -6,6 +6,8 @@
     font-size: 20px;
     line-height: 24px;
     font-weight: 500;
+    text-overflow: ellipsis;
+    width: 250px;
   }
   &__expl {
     margin: 0;
@@ -13,12 +15,18 @@
     font-size: 12px;
     line-height: 16px;
     font-weight: 300;
+    width: 320px;
   }
   &__question {
     margin: -18px 0 0 0;
     font-size: 11px;
     line-height: 13px;
     font-weight: 300;
+  }
+  &__link {
+    display: inline-block;
+    width: 50px;
+    vertical-align: bottom;
   }
 }
 

@@ -17,19 +17,11 @@
       font-size: 30px;
       line-height: 40px;
       color: #fff;
+      width: 230px;
     }
   } 
   #shape {
     display: none;
-  }
-}
-
-@keyframes show-logo {
-  0%{
-    transform: translate(400px, 310px);
-  }
-  100% {
-    transform: translate(0, 0);
   }
 }
 
