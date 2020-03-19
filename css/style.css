@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'PTSans';
+  src: url("../fonts/PT_Sans/PTSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'WorkSans';
   src: url("../fonts/Work_Sans/WorkSans-Light.woff2") format("woff2");
   font-weight: 300;
@@ -16,13 +23,6 @@
   font-family: 'WorkSans';
   src: url("../fonts/Work_Sans/WorkSans-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'PTSans';
-  src: url("../fonts/PT_Sans/PTSans-Regular.woff2") format("woff2");
-  font-weight: 400;
   font-style: normal;
 }
 
