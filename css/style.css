@@ -517,8 +517,8 @@ h1, h2, p, a, label, input, select, option {
 }
 
 .form__item--show1 {
-  -webkit-animation: show2 0.4s;
-          animation: show2 0.4s;
+  -webkit-animation: show1 0.3s;
+          animation: show1 0.3s;
 }
 
 .form__item--show2 {
