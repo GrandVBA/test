@@ -295,8 +295,6 @@ h1, h2, p, a, label, input, select, option {
     z-index: 2;
     -webkit-animation: show-logo 23s;
             animation: show-logo 23s;
-    -webkit-animation-delay: 0;
-            animation-delay: 0;
   }
 }
 
@@ -421,7 +419,7 @@ h1, h2, p, a, label, input, select, option {
 .form__item label {
   font-size: 10px;
   line-height: 12px;
-  font-weight: 300px;
+  font-weight: 300;
   color: #7C7C7C;
   z-index: 3;
 }
