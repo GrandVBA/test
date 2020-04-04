@@ -23,6 +23,12 @@
       &:focus {
         border-bottom: 1px solid #000;
       }
+      &:focus:required {
+        border-bottom: 1px solid #cc1d00;
+      }
+      &:valid:required {
+        border-bottom: 1px solid #00cc00;
+      }
     }
     input::placeholder {
       font-size: 12px;

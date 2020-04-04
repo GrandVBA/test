@@ -20,19 +20,20 @@
           <p class="content__expl">
             Use the form below to create your account.
           </p>
-          <form class="content__form form" action="#" method="POST">
+          <form class="content__form form" action="#">
             <ul class="form__list">
               <li class="form__item form__item--show1">
                 <label for="f-name">First Name</label>
-                <input class="form__fname" id="f-name" name="first-name" type="text" placeholder="Alice">
+                <input class="form__fname" id="f-name" name="first-name" type="text" placeholder="Alice" pattern="^[a-zA-Z]+$" required>
               </li>
               <li class="form__item form__item--show2">
                 <label for="l-name">Last Name</label>
-                <input class="form__lname" id="l-name" name="last-name" type="text" placeholder="Miller">
+                <input class="form__lname" id="l-name" name="last-name" type="text" placeholder="Miller" pattern="^[a-zA-Z]+$" required>
               </li>
               <li class="form__item form__item--show3">
                 <label for="nationality">Nationality</label>
-                <select class="form__nation" name="Nation" id="nationality">
+                <select class="form__nation" name="Nation" id="nationality" required>
+                  <option hidden disabled selected value></option>
                   <option value="American">American</option>
                   <option value="Russian">Russian</option>
                   <option value="Italy">Italy</option>
@@ -40,16 +41,17 @@
               </li>
               <li class="form__item form__item--show4">
                 <label for="mail">E-mail</label>
-                <input class="form__email" id="mail" type="email" placeholder="alice.miller@yahoo.com">
+                <input class="form__email" id="mail" type="email" placeholder="alice.miller@yahoo.com" required>
               </li>
               <li class="form__item form__item--show5">
                 <label>Date of Birth</label>
                 <div class="date-wrapper">
                   <div class="day-wrap">
-                    <select class="form__day" name="day">
+                    <select class="form__day" name="day" required>
+                        <option hidden disabled selected value></option>
                         <option value="1">1</option>
                         <option value="2">2</option>
-                        <option value="3" selected>3</option>
+                        <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
@@ -79,7 +81,8 @@
                         <option value="30">30</option>
                     </select>
                   </div>
-                  <select class="form__month" name="month">
+                  <select class="form__month" name="month" required>
+                    <option hidden disabled selected value></option>
                     <option value="January">January</option>
                     <option value="February">February</option>
                     <option value="March">March</option>
@@ -93,7 +96,16 @@
                     <option value="November">November</option>
                     <option value="December">December</option>
                   </select>
-                  <select class="form__year" name="year">
+                  <select class="form__year" name="year" required>
+                    <option hidden disabled selected value></option>
+                    <option value="1995">1987</option>
+                    <option value="1995">1988</option>
+                    <option value="1995">1989</option>
+                    <option value="1995">1990</option>
+                    <option value="1995">1991</option>
+                    <option value="1995">1992</option>
+                    <option value="1995">1993</option>
+                    <option value="1995">1994</option>
                     <option value="1995">1995</option>
                     <option value="1996">1996</option>
                     <option value="1997">1997</option>
@@ -109,11 +121,11 @@
               </li>
               <li class="form__item form__item--show7">
                 <label for="pass">Password</label>
-                <input class="form__pass" id="pass" type="password">
+                <input class="form__pass" id="pass" type="password" required>
               </li>
               <li class="form__item form__item--show8">
                 <label for="conf-pass">Confim Password</label>
-                <input class="form__cpass" id="conf-pass" type="password">
+                <input class="form__cpass" id="conf-pass" type="password" required>
               </li>
             </ul>
             <input class="form__btn" id="btn" type="submit" value="Complete Signup">

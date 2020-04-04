@@ -388,6 +388,14 @@ h1, h2, p, a, label, input, select, option {
   border-bottom: 1px solid #000;
 }
 
+.form__item input:focus:required, .form__item select:focus:required {
+  border-bottom: 1px solid #cc1d00;
+}
+
+.form__item input:valid:required, .form__item select:valid:required {
+  border-bottom: 1px solid #00cc00;
+}
+
 .form__item input::-webkit-input-placeholder {
   font-size: 12px;
   line-height: 14px;
